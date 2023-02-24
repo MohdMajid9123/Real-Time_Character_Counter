@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* container section */
+.container {
+  width: 80vw;
+  text-align: center;
+  padding: 2rem;
+  position: relative;
+}
+h2 {
+  font-size: 2.5rem;
+}
+#para {
+  font-size: 1.4rem;
+  margin: 2rem auto;
+  max-width: 40rem;
+  text-align: center;
+}
+/* textarea section */
+textarea {
+  width: 40rem;
+  min-height: 20rem;
+  border: none;
+  outline: none;
+  box-shadow: 0 1rem 2rem 0 gray;
+  padding: 2rem;
+  border-radius: 2rem;
+  resize: none;
+}
+textarea:focus {
+  border: 1px solid;
+}
+
+/* button section */
+
+button {
+  padding: 1rem;
+  background-color: blueviolet;
+  color: white;
+  margin-top: 2rem;
+  position: absolute;
+  bottom: 7rem;
+  left: 38rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 0px 5px 35px -4px rgba(0, 0, 0, 0.45);
+}
+button:focus,
+button:hover {
+  background-color: #a050eb;
+}
+
+/* counter_container section */
+.counter_container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 0 1rem;
+  font-size: 1.9rem;
+  font-weight: 500;
+  /* border: 2px solid; */
+}
+.counter_container p {
+  /* border: 2px solid; */
+  padding: 0 4rem;
+}
+/* media query section */
+@media screen and (max-width: 768px) {
+  textarea {
+    width: 30rem;
+  }
+  button {
+    bottom: 12rem;
+    left: 15rem;
+  }
+  .counter_container {
+    flex-direction: column;
+  }
+  .counter_container p {
+    font-size: 2rem;
+    padding-top: 1rem;
+  }
+}

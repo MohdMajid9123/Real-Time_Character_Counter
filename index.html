@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta value="" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../images/power.ico" type="image/x-icon" />
+    <title>Weather Project</title>
+    <!-- fontawosome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- countainer section -->
+    <div class="container">
+      <h2>Real Time character Counter</h2>
+      <p id="para">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio ab
+        quia eos voluptates .
+      </p>
+      <!-- textarea section -->
+      <textarea
+        id="textarea"
+        class="textarea"
+        maxlength="150"
+        placeholder="Write here"
+      ></textarea>
+      <!-- button section -->
+      <button onclick="copyText()">Copy Text</button>
+      <!-- counter_container section -->
+      <div class="counter_container">
+        <p>Total Character : <span id="total_counter">0</span></p>
+        <p>Remaining Char : <span id="remain_counter">150</span></p>
+      </div>
+    </div>
+    <!-- js link -->
+    <script src="index.js"></script>
+  </body>
+</html>
